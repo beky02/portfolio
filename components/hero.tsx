@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import Button from "../common-components/button";
 import Layout from "./layout";
-import { Nav } from "./nav";
-import { TypeAnimation } from "react-type-animation";
+import Nav  from "./nav";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,43 +21,44 @@ export const Hero = () => {
   }, []);
   return (
     <Layout>
-      <div className="h-screen flex flex-col items-center text-white gap-y-10">
+      <div className="h-screen flex flex-col text-white gap-y-10">
         <div className="w-full flex justify-end">
           <Nav></Nav>
         </div>
 
         {/* introduction section */}
-        <div className="text-5xl w-full">
-          <p data-aos="zoom-in" data-aos-delay="600">
-            Hello,
-          </p>
+        <div className="text-3xl w-full lg:w-[75%]">
+          <h1
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            className="text-primary font-normal text-base mb-5 "
+          >
+            Hi, my name is
+          </h1>
+          <h2
+            className="font-bold text-7xl text-secondary-100"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            Bereket
+          </h2>
           <br />
-          <p data-aos="zoom-in" data-aos-delay="800">
-            I am <span className="text-primary">Bereket,</span>
-          </p>
-          <br />
-          {/* <p>Front End and Mobile App Developer </p> */}
-          <div data-aos="zoom-in" data-aos-delay="1000">
-            <TypeAnimation
-              sequence={[
-                "Fullstack and",
-                1000,
-                "Fullstack and Mobile App Developer",
-                1000,
-                "F",
-              ]}
-              speed={30}
-              deletionSpeed={30}
-              cursor={false}
-              repeat={Infinity}
-            />
-          </div>
-          <p data-aos="zoom-in" data-aos-delay="1200">
-            <span className="text-2xl text-secondary">
-              Currently Located in Ethiopia, I love building{" "}
-              <span className="text-primary ">intractive</span>, digital
-              experiences on the web
-            </span>
+          <h3
+            className="font-bold text-7xl text-secondary-400"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+          >
+            I build things for web & mobile.
+          </h3>
+
+          <p
+            className="text-base text-secondary-400 leading-7 mt-10 lg:w-[60%]"
+            data-aos="zoom-in"
+            data-aos-delay="1200"
+          >
+            I'm a software engineer specializing in creating robust digital
+            solutions. Occasionally, I dabble in design to ensure my work
+            isn&#39;t just functional, but also engaging.
           </p>
         </div>
         <div
@@ -86,7 +86,7 @@ export const Hero = () => {
 const MouseScrollIndicator = () => {
   return (
     <div
-      className="flex flex-col items-center cursor-pointer"
+      className="flex flex-col items-center cursor-pointer w-full"
       data-aos="fade-down"
       data-aos-delay="1600"
       onClick={() => {
