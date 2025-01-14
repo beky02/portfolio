@@ -168,7 +168,7 @@ export default function MyProjects() {
             <h3 className="text-3xl font-semibold text-[#ccd6f6] mr-4">
               My Projects{" "}
             </h3>
-            <div className="h-0.5 w-[25%] bg-primary"></div>
+            <div className="h-[1px] w-[23%] bg-background-300 rounded-sm"></div>
           </div>
 
           <div className="w-full flex flex-col justify-center items-center gap-y-20">
@@ -214,7 +214,7 @@ function Project({
 }) {
   return (
     <div
-      className={`relative flex w-full max-w-5xl flex-col items-start text-[#ccd6f6] text-sm leading-relaxed ${
+      className={`relative flex w-full max-w-5xl flex-col items-start text-secondary-100 text-sm leading-relaxed ${
         reverse ? "lg:flex-row-reverse" : ""
       } p-8 cursor-pointer overflow-hidden hover:bg-[rgba(148,163,184,0.1)] gap-y-5 rounded-lg md:flex-col lg:flex-row`}
       onClick={onClick}
