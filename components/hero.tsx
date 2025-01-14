@@ -72,7 +72,7 @@ export const Hero = () => {
               window.location.href = "mailto:berekettadege09@gmail.com";
             }}
           >
-            Let's get in touch!
+            Let&#39;s get in touch!
           </Button>
         </div>
 

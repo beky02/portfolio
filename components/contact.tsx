@@ -6,7 +6,7 @@ export default function Contact() {
       <Layout>
         <div className="h-full flex flex-col justify-center items-center my-10 gap-y-20 text-center">
           <div className="flex flex-col text-secondary-100 text-6xl font-bold gap-y-10">
-            <p>Let's talk about</p>
+            <p>Let&#39;s talk about</p>
             <p>your project</p>
             {/* <div className="flex flex-col gap-y-10">
             <p className="text-[#8892b0]">
