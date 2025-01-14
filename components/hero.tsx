@@ -56,7 +56,7 @@ export const Hero = () => {
             data-aos="zoom-in"
             data-aos-delay="1200"
           >
-            I'm a software engineer specializing in creating robust digital
+            I&#39;m a software engineer specializing in creating robust digital
             solutions. Occasionally, I dabble in design to ensure my work
             isn&#39;t just functional, but also engaging.
           </p>
