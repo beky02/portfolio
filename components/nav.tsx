@@ -12,7 +12,7 @@ interface NavItemProps {
 function NavItem({ index, title, href, isActive }: NavItemProps) {
   return (
     <Link href={href}>
-      <div className="text-secondary-200 text-sm cursor-pointer hover:text-primary">
+      <div className="text-secondary-200 text-sm cursor-pointer hover:text-primary hidden sm:block">
         <span className="text-primary">{index < 10 ? `0${index}` : index}.</span>{" "}
         <span className={isActive ? "text-primary" : ""}>{title}</span>
       </div>
