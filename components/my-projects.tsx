@@ -214,9 +214,8 @@ function Project({
 }) {
   return (
     <div
-      className={`relative flex w-full max-w-5xl flex-col items-start text-secondary-100 text-sm leading-relaxed ${
-        reverse ? "lg:flex-row-reverse" : ""
-      } p-8 cursor-pointer overflow-hidden hover:bg-[rgba(148,163,184,0.1)] gap-y-5 rounded-lg md:flex-col lg:flex-row`}
+      className={`relative flex w-full max-w-5xl flex-col items-start text-secondary-100 text-sm leading-relaxed p-8 cursor-pointer overflow-hidden hover:bg-[rgba(148,163,184,0.1)] gap-y-5 rounded-lg md:flex-col lg:flex-row 
+        ${reverse ? "lg:flex-row-reverse" : ""}`}
       onClick={onClick}
     >
       {/* Left Column */}
@@ -226,8 +225,6 @@ function Project({
         }`}
       >
         <h3 className="mb-6 text-xl text-secondary-100 ">{title}</h3>
-
-        {/* <span className="text-primary text-lg font-bold">{"▹"}</span> */}
 
         {/* Description Card */}
         <div className="mb-8 rounded-sm bg-[#112240] p-6">
