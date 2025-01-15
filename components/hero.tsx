@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Button from "../common-components/button";
 import Layout from "./layout";
-import Nav  from "./nav";
+import Nav from "./nav";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +21,7 @@ export const Hero = () => {
   }, []);
   return (
     <Layout>
-      <div className="h-screen flex flex-col text-white gap-y-10">
+      <div className="h-screen flex flex-col text-white gap-y-10 ">
         <div className="w-full flex justify-end">
           <Nav></Nav>
         </div>
@@ -77,7 +77,9 @@ export const Hero = () => {
         </div>
 
         {/* mouse indicator to scroll down */}
-        <MouseScrollIndicator />
+        <div className="hidden sm:block">
+          <MouseScrollIndicator />
+        </div>
       </div>
     </Layout>
   );
